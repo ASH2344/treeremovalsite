@@ -1,0 +1,150 @@
+{
+  "chainsaw-cutting-tree-stump": {
+    "ratio": 0.6674,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "chainsaw-cutting-felled-trunk": {
+    "ratio": 0.6667,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "pine-tree-pole-saw-yard": {
+    "ratio": 0.6667,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "tree-stump-cleared-lot": {
+    "ratio": 0.6667,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "fallen-tree-blocking-road": {
+    "ratio": 0.6667,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "uprooted-tree-after-storm": {
+    "ratio": 0.6667,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "cutting-log-land-clearing": {
+    "ratio": 0.6667,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "chainsaw-on-cut-logs": {
+    "ratio": 0.6272,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "crew-cutting-tree-trunk-sections": {
+    "ratio": 0.6667,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "splitting-logs-backyard": {
+    "ratio": 0.6667,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "chainsaw-cutting-log-section": {
+    "ratio": 1.5,
+    "widths": [
+      480,
+      640,
+      800
+    ]
+  },
+  "cutting-trunk-with-crane-truck": {
+    "ratio": 0.6667,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "chainsaw-operator-oak-tree": {
+    "ratio": 0.6674,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "decayed-tree-trunk-inspection": {
+    "ratio": 0.5617,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  },
+  "chainsaw-resting-on-stump": {
+    "ratio": 0.5953,
+    "widths": [
+      480,
+      640,
+      800,
+      1280,
+      1600
+    ]
+  }
+}

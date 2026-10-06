@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+/* Brand colors sampled from the logo */
+@theme {
+  --color-forest-50: #f1f6f2;
+  --color-forest-100: #dde9e0;
+  --color-forest-200: #b9d3bf;
+  --color-forest-600: #22603f;
+  --color-forest-700: #18482f; /* logo green */
+  --color-forest-800: #123826;
+  --color-forest-900: #0c271a;
+  --color-bark-100: #f5e9dc;
+  --color-bark-400: #c0844c;
+  --color-bark-500: #925a2b; /* logo brown */
+  --color-bark-600: #7a4f27;
+  --color-bark-700: #5f3c1d;
+  --color-cream: #faf6ef;
+  --color-ink: #1d231f;
+  --color-muted: #4b564f;
+
+  --font-display: var(--font-barlow), "Arial Narrow", Arial, sans-serif;
+  --font-sans: var(--font-public), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  color: var(--color-ink);
+  background: #fff;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-bark-400);
+  outline-offset: 2px;
+}
+
+/* ---------- Page copy rendered from content.md ---------- */
+.prose-copy {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-ink);
+}
+.prose-copy p {
+  margin: 0 0 1rem;
+}
+.prose-copy strong {
+  color: var(--color-forest-800);
+  font-weight: 700;
+}
+.prose-copy a:not(.btn-quote-inline) {
+  color: var(--color-forest-700);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--color-bark-400);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+.prose-copy a:not(.btn-quote-inline):hover {
+  color: var(--color-bark-600);
+}
+.prose-copy ul {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+.prose-copy ul > li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.6rem;
+}
+.prose-copy ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  top: 0.62em;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--color-bark-500);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%); /* tiny pine */
+}
+.prose-copy ol {
+  counter-reset: step;
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+}
+.prose-copy ol > li {
+  counter-increment: step;
+  position: relative;
+  padding: 0.85rem 1rem 0.85rem 3.5rem;
+  margin-bottom: 0.6rem;
+  background: var(--color-cream);
+  border-radius: 0.75rem;
+}
+.prose-copy ol > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0.9rem;
+  top: 0.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 999px;
+  background: var(--color-forest-700);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 0 0 1.25rem;
+  border: 1px solid var(--color-forest-100);
+  border-radius: 0.75rem;
+}
+.prose-copy table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.975rem;
+  min-width: 30rem;
+}
+.prose-copy th {
+  background: var(--color-forest-700);
+  color: #fff;
+  text-align: left;
+  font-weight: 600;
+  padding: 0.7rem 0.9rem;
+}
+.prose-copy td {
+  padding: 0.7rem 0.9rem;
+  border-top: 1px solid var(--color-forest-100);
+  vertical-align: top;
+}
+.prose-copy tbody tr:nth-child(even) td {
+  background: var(--color-forest-50);
+}
+.prose-copy td:first-child {
+  font-weight: 600;
+  color: var(--color-forest-800);
+}
+
+/* [QUOTE BUTTON] inside copy */
+.btn-quote-inline {
+  display: inline-block;
+  background: var(--color-bark-500);
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: none !important;
+  padding: 0.35rem 0.85rem;
+  border-radius: 0.5rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.btn-quote-inline:hover {
+  background: var(--color-bark-600);
+}
+.tel-link {
+  white-space: nowrap;
+}
+
+/* Hero intro on dark background */
+.hero-copy p {
+  margin: 0 0 1rem;
+}
+.hero-copy strong {
+  color: #fff;
+}
+.hero-copy a.tel-link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--color-bark-400);
+  text-underline-offset: 3px;
+}
+
+/* CTA band copy */
+.cta-copy p {
+  margin: 0;
+}
+.cta-copy a.tel-link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* FAQ accordion */
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+}
+.faq-answer a {
+  color: var(--color-forest-700);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Dropdown nav (no JS): open on hover or keyboard focus */
+.nav-drop:hover > .nav-menu,
+.nav-drop:focus-within > .nav-menu {
+  display: block;
+}
+
+/* Mobile menu */
+.mobile-nav[open] .menu-open-icon {
+  display: none;
+}
+.mobile-nav:not([open]) .menu-close-icon {
+  display: none;
+}
+.mobile-nav summary {
+  list-style: none;
+}
+.mobile-nav summary::-webkit-details-marker {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
