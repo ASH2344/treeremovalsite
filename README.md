@@ -25,5 +25,5 @@ npm run build    # static export to /out
 ```
 
 ## Deploy
-Every push to `main` runs `.github/workflows/deploy.yml`: install → build → FTP upload of `/out` to `public_html`.
-Needs repository secrets `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`.
+Every push to `main` runs `.github/workflows/deploy.yml`: install → build → publish `/out` to the `deploy` branch. Hostinger (hPanel → Git) deploys the `deploy` branch into `public_html`.
+No secrets needed.
