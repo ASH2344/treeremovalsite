@@ -48,9 +48,15 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-6xl px-4 py-5 text-xs text-forest-200">
-          © {year} {siteConfig.name}. All rights reserved.
-        </p>
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-forest-200 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {year} {siteConfig.name}. All rights reserved.</p>
+          <p>
+            Developed by{" "}
+            <a href="https://hustleseo.io/" className="font-semibold text-white underline underline-offset-2 hover:text-bark-400">
+              Hustle SEO
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );

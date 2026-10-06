@@ -215,7 +215,7 @@ export function getAllContent(): PageContent[] {
         const submit = md.match(/Submit button text\s*\|\s*"?([^"|]+)"?/i);
         const success = md.match(/\*\*After submit message:\*\*\s*"(.+)"/i);
         form = {
-          fields: parseFormTable(md),
+          fields: parseFormTable(md).filter((f) => f.type !== "file" || siteConfig.formPhotoUploads),
           submitText: submit ? submit[1].trim() : "Submit",
           successMessage: success ? success[1] : "Thanks! We've received your request.",
         };

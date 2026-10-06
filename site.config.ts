@@ -19,6 +19,8 @@ const siteConfig = {
   // the access key at https://web3forms.com. Keep this in sync for reference.
   leadEmail: "", // optional note only; leads go to the email on the Web3Forms key
   web3formsAccessKey: "54960a2a-bdb6-4ff5-a2d8-7dd9138dc8e9",
+  // Photo uploads need a paid Web3Forms plan. Set true after upgrading.
+  formPhotoUploads: false,
 
   // ── Tracking & verification (leave "" to disable) ─────────────────────
   googleAnalyticsId: "", // GA4 Measurement ID, e.g. "G-XXXXXXXXXX"

@@ -1,43 +1,43 @@
-name: Build and deploy to Hostinger
+name: Build site for Hostinger
+
+# On every push to main: build the static site, then publish the /out folder
+# to the "deploy" branch. Hostinger's Git feature pulls that branch straight
+# into public_html. No FTP account or secrets needed.
 
 on:
   push:
     branches: [main]
-  workflow_dispatch: # lets you re-run a deploy from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 concurrency:
-  group: deploy-hostinger
+  group: deploy
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
 
-      - name: Install dependencies
-        run: npm ci
+      - run: npm ci
+      - run: npm run build
 
-      - name: Build static site
-        run: npm run build
-
-      - name: Upload /out to Hostinger public_html via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+      - name: Publish /out to the deploy branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftp
-          port: 21
-          local-dir: ./out/
-          server-dir: ./public_html/
-          exclude: |
-            **/.git*
-            **/.git*/**
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: deploy
+          force_orphan: true
+          enable_jekyll: true # don't add a .nojekyll file
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+          commit_message: Deploy

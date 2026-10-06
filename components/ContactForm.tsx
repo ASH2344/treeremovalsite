@@ -57,18 +57,33 @@ export default function ContactForm({ fields, submitText, successHtml, accessKey
     setStatus("sending");
     setError("");
     try {
-      let res = await fetch(ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } });
-      let json = await res.json().catch(() => ({}));
+      const send = async (body: FormData) => {
+        try {
+          const r = await fetch(ENDPOINT, { method: "POST", body });
+          const j = await r.json().catch(() => ({}));
+          return { ok: r.ok && j.success === true, message: j.message as string | undefined };
+        } catch {
+          // network/CORS failure (e.g. attachments rejected on the free plan)
+          return { ok: false, message: undefined };
+        }
+      };
 
-      // File attachments need a paid Web3Forms plan. If they're rejected,
-      // resend without the photos so the lead is never lost.
-      if ((!res.ok || !json.success) && fileField && data.getAll(fieldName(fileField.label)).length) {
+      let result = await send(data);
+
+      // Photo attachments need a paid Web3Forms plan and big phone photos can
+      // be refused. If that happens, resend without the photos so the lead is
+      // never lost.
+      if (!result.ok && fileField && data.getAll(fieldName(fileField.label)).length) {
         const count = data.getAll(fieldName(fileField.label)).length;
         data.delete(fieldName(fileField.label));
         data.set("Photos", `Customer tried to attach ${count} photo(s); ask them to text or email the photos.`);
-        res = await fetch(ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } });
-        json = await res.json().catch(() => ({}));
+        result = await send(data);
       }
+      // one retry for a flaky connection
+      if (!result.ok && result.message === undefined) result = await send(data);
+
+      const res = { ok: result.ok };
+      const json = { success: result.ok, message: result.message };
 
       if (res.ok && json.success) {
         setStatus("done");
@@ -77,7 +92,7 @@ export default function ContactForm({ fields, submitText, successHtml, accessKey
           (window as unknown as { gtag: (...a: unknown[]) => void }).gtag("event", "generate_lead", { service });
         }
       } else {
-        throw new Error(json.message || "Something went wrong.");
+        throw new Error(json.message || "We couldn't send your request.");
       }
     } catch (err) {
       setStatus("error");
