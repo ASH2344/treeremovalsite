@@ -12,13 +12,13 @@ const siteConfig = {
   url: "https://macontreeremovalco.com",
 
   // ── Phone ─────────────────────────────────────────────────────────────
-  phone: "[YOUR PHONE NUMBER]",
+  phone: "(774) 446-3349",
 
   // ── Contact form (Web3Forms) ──────────────────────────────────────────
   // Web3Forms sends submissions to the email address you used to create
   // the access key at https://web3forms.com. Keep this in sync for reference.
-  leadEmail: "[YOUR EMAIL]",
-  web3formsAccessKey: "[WEB3FORMS ACCESS KEY]",
+  leadEmail: "", // optional note only; leads go to the email on the Web3Forms key
+  web3formsAccessKey: "54960a2a-bdb6-4ff5-a2d8-7dd9138dc8e9",
 
   // ── Tracking & verification (leave "" to disable) ─────────────────────
   googleAnalyticsId: "", // GA4 Measurement ID, e.g. "G-XXXXXXXXXX"
