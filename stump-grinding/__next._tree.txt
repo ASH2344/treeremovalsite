@@ -1,0 +1,6 @@
+:HL["/_next/static/media/035c7fe496b803e3-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e98110099c020b2e-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/1b2db1e7ce61ed7f.css","style"]
+:HL["/images/logo-mark.webp","image"]
+:HL["/images/tree-stump-cleared-lot-800.webp","image",{"imageSrcSet":"/images/tree-stump-cleared-lot-480.webp 480w, /images/tree-stump-cleared-lot-640.webp 640w, /images/tree-stump-cleared-lot-800.webp 800w, /images/tree-stump-cleared-lot-1280.webp 1280w, /images/tree-stump-cleared-lot-1600.webp 1600w","imageSizes":"(min-width:1024px) 520px, 92vw","fetchPriority":"high"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"d","key":"stump-grinding","siblings":["_not-found","_global-error","robots.txt","sitemap.xml"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"dSJye0K40-_4Piwti5WAE"}

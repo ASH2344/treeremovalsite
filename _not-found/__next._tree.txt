@@ -1,0 +1,5 @@
+:HL["/_next/static/media/035c7fe496b803e3-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e98110099c020b2e-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/1b2db1e7ce61ed7f.css","style"]
+:HL["/images/logo-mark.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"_not-found","param":null,"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"dSJye0K40-_4Piwti5WAE"}
