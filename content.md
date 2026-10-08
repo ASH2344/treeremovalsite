@@ -76,7 +76,7 @@ We serve all of Macon-Bibb County, including Ingleside, Vineville, Shirley Hills
 
 **How much does tree service cost in Macon?** Most tree removals in the Macon area cost roughly $250 to $1,000. Large trees, trees near houses or power lines, and emergency jobs cost more. Trimming usually costs less than removal.
 
-**Do I need a permit to remove a tree in Macon?** Some tree removals in Macon-Bibb County may need a permit, depending on the tree and the property. We'll let you know if your job needs one.
+**Do I need a permit to remove a tree in Macon?** Usually not for a tree in your own yard. But if your property is in one of Macon's Design Review Districts (zoned historic or downtown), you need a Certificate of Appropriateness first, even for a dead tree. Trees in the public right-of-way need county approval. See our [Macon tree removal permit guide](/macon-tree-removal-permit/).
 
 **Can you remove a tree that fell on my house?** Yes. Call \[PHONE\] right away. Stay clear of the area, especially if power lines are involved.
 
@@ -153,7 +153,7 @@ Call \[PHONE\] for an exact quote. It's free.
 
 #### Tree Removal Permits in Macon
 
-Some tree removals in Macon-Bibb County may need a permit, depending on the tree's size, location, and whether it's on private or public property. We'll tell you if your removal needs one before work starts.
+Most tree removals on private residential lots in Macon-Bibb County don't need a permit. The exceptions are properties in Design Review Districts (zoned historic or downtown), which need a Certificate of Appropriateness, and trees in the public right-of-way, which need county approval. We'll tell you if your removal needs approval before work starts. See our [Macon tree removal permit guide](/macon-tree-removal-permit/).
 
 #### Serving Macon and Nearby Areas
 
@@ -827,50 +827,62 @@ Need pines trimmed safely? Call \[PHONE\] or see our tree trimming service for M
 | Main keyword | macon tree removal permit |
 | Secondary | macon bibb tree ordinance, do I need a permit to cut down a tree in macon |
 | SEO title | Do You Need a Tree Removal Permit in Macon, GA? |
-| Meta description | When Macon-Bibb County requires a tree removal permit: private yards, overlay districts, development sites, and right-of-way trees. Plus what to do in an emergency. |
+| Meta description | Most Macon yards need no permit to remove a tree. Downtown and historic Design Review Districts do. How to check your property, what to do after a storm, and who to call. |
 | H1 | Do You Need a Tree Removal Permit in Macon, GA? |
 
-**Note for Aisha:** online sources disagree on Macon's rules. Aggregator sites say routine residential removal is generally allowed, with permits mainly for overlay districts, development projects, and public right-of-way trees. One older site claims most removals need a permit. Call Macon-Bibb County Planning and Zoning to confirm before publishing, and update the copy if anything differs.
+**Note for Aisha:** rewritten Oct 8 from Macon-Bibb Planning & Zoning sources: Design Review Districts are properties zoned H (historic) or CBD (downtown), and work there needs a Certificate of Appropriateness. A 2023 WGXA story covered a Vineville Avenue homeowner cited for removing dead trees without one ($150 application fee). Still worth a call to P&Z at 478-241-2554 to confirm the storm and right-of-way details.
 
 ### Body copy
 
 **Do You Need a Tree Removal Permit in Macon, GA?**
 
-For most homeowners, removing a tree from your own residential yard in Macon-Bibb County does not require a permit. But there are important exceptions, and removing a protected tree without approval can mean fines and required replanting. Here's how to tell which situation you're in.
+For most Macon homeowners, no. Removing a tree from your own yard in a regular residential neighborhood generally doesn't need a permit from Macon-Bibb County. The big exception is Macon's Design Review Districts: downtown and the historic districts. There, removing a tree, even a dead one, can require approval first.
 
 #### When You Usually Don't Need a Permit
 
-- Removing a tree on your own private residential property
-- Trimming trees on your own property
-- Removing a tree that has already fallen
+- The tree is on your own private residential lot
+- Your property is not zoned historic (H) or downtown (CBD)
+- You're trimming, not removing, a tree on your own property
+- The tree has already fallen and you're cleaning it up
 
-#### When You May Need a Permit or Approval
+#### When You Need Approval First
 
-| Situation | Why |
+| Situation | What's required |
 | --- | --- |
-| Property in an overlay or historic district | Some districts protect trees and may require review |
-| New construction or development | Projects under development review may need tree surveys and replacement plans |
-| Tree in the public right-of-way | Trees between the sidewalk and street are managed by the county |
-| HOA neighborhoods | Your HOA may have its own approval rules |
+| Property in a Design Review District (zoned H or CBD) | A Certificate of Appropriateness from Macon-Bibb Planning & Zoning before the tree comes down |
+| Tree in the public right-of-way | Approval from Macon-Bibb County. These trees aren't yours to remove |
+| New construction or development | Tree and landscape plans may be reviewed as part of the project |
+| HOA neighborhood | Your HOA's own approval rules |
+
+#### Macon's Design Review Districts
+
+Properties zoned H (historic) or CBD (downtown) are in a Design Review District. Work on these properties, including tree removal, may need review by the Design Review Board before a Certificate of Appropriateness is issued. This catches homeowners off guard: in 2023, a homeowner on Vineville Avenue was cited months after removing dead trees because she hadn't applied for one. She paid a $150 application fee and had to go before the board.
+
+If you live in or near Vineville, Intown, or downtown, check your zoning before any tree comes down.
+
+#### After a Storm in a Design Review District
+
+| Situation | What to do |
+| --- | --- |
+| Tree on your house, car, or a power line | Safety first. Call 911 or Georgia Power for power lines, then call us to make it safe |
+| Tree down in the yard | Photograph it before cleanup, then clear it |
+| Standing tree badly damaged or leaning | Photograph it and call Planning & Zoning before removing it if you can |
+| Any emergency removal | Keep photos and invoices, and call Planning & Zoning afterward to ask whether you need an after-the-fact certificate |
 
 #### Trees Near the Street: Who Owns Them?
 
-Trees in the public right-of-way, often the strip between the sidewalk and the road, are usually managed by Macon-Bibb County, not the homeowner. Don't remove or heavily prune these without county approval.
-
-#### What About Emergencies?
-
-If a tree has fallen or is about to fall on your home, safety comes first. Have the hazard removed, take photos before and after, and contact the county afterward if your property is in a protected district. Keep records in case questions come up later.
+Trees in the public right-of-way, often the strip between the sidewalk and the road, are managed by Macon-Bibb County, not the homeowner. Don't remove or heavily prune these without county approval.
 
 #### How to Check Your Property
 
-1. **Find out if you're in an overlay or historic district.** Check with Macon-Bibb County Planning and Zoning.
+1. **Look up your zoning.** If it's H or CBD, you're in a Design Review District.
 2. **Check where the tree sits.** If it's near the street, it may be in the right-of-way.
 3. **Check HOA rules** if your neighborhood has one.
-4. **Ask your tree service.** We'll flag anything that looks like it may need approval.
+4. **Call Macon-Bibb Planning & Zoning** at 478-241-2554 (3661 Eisenhower Parkway, Suite MB104) if you're not sure.
 
-#### Penalties for Removing a Protected Tree
+#### Penalties for Skipping Approval
 
-Unauthorized removal of a protected tree can lead to fines and a requirement to plant replacement trees. A quick check before work starts avoids this.
+Removing a tree in a Design Review District without a Certificate of Appropriateness can lead to a violation notice, a required after-the-fact application, and a court date. A quick check before work starts avoids all of it.
 
 #### Need a Tree Removed in Macon?
 
