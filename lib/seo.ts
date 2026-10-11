@@ -40,7 +40,10 @@ const provider = () => ({
   url: `${siteConfig.url}/`,
   logo: abs("/images/macon-tree-removal-co-logo.png"),
   ...(phoneE164() ? { telephone: phoneE164() } : {}),
+  ...(sameAs().length ? { sameAs: sameAs() } : {}),
 });
+
+const sameAs = () => Object.values(siteConfig.social).filter(Boolean);
 
 const areaServed = (list: string[]) =>
   list.map((name) => ({ "@type": "City", name }));
