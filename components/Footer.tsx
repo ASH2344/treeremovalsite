@@ -26,6 +26,13 @@ export default function Footer() {
           />
           <p className="mt-4 max-w-xs text-sm leading-relaxed">{siteConfig.footerLine}</p>
           <PhoneButton className="mt-5" />
+          {siteConfig.email && (
+            <p className="mt-4 text-sm">
+              <a href={`mailto:${siteConfig.email}`} className="font-semibold text-white underline underline-offset-2 hover:text-bark-400">
+                {siteConfig.email}
+              </a>
+            </p>
+          )}
           {SOCIAL.some((s) => siteConfig.social[s.key]) && (
             <ul className="mt-5 flex gap-3" aria-label="Follow us">
               {SOCIAL.filter((s) => siteConfig.social[s.key]).map(({ key, label, Icon }) => (
