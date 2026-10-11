@@ -26,6 +26,15 @@ const siteConfig = {
   googleAnalyticsId: "", // GA4 Measurement ID, e.g. "G-XXXXXXXXXX"
   googleSiteVerification: "", // Search Console HTML-tag content value only
 
+  // ── Social profiles (leave "" to hide) ────────────────────────────────
+  // Use the profile/page URL, not a link to a single post or reel.
+  // Shown as icons in the footer and added to the Organization schema (sameAs).
+  social: {
+    facebook: "",
+    instagram: "https://www.instagram.com/macontreeremovalco/",
+    tiktok: "https://www.tiktok.com/@macon.tree.remova",
+  },
+
   footerLine:
     "Macon Tree Removal Co. connects homeowners with local tree service providers.",
 
