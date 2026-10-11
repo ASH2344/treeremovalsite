@@ -40,6 +40,7 @@ const provider = () => ({
   url: `${siteConfig.url}/`,
   logo: abs("/images/macon-tree-removal-co-logo.png"),
   ...(phoneE164() ? { telephone: phoneE164() } : {}),
+  ...(siteConfig.email ? { email: siteConfig.email } : {}),
   ...(sameAs().length ? { sameAs: sameAs() } : {}),
 });
 
