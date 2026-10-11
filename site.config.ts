@@ -14,6 +14,10 @@ const siteConfig = {
   // ── Phone ─────────────────────────────────────────────────────────────
   phone: "(774) 446-3349",
 
+  // ── Email ──────────────────────────────────────────────────────────────
+  // Shown in the footer and added to schema. Leave "" to hide.
+  email: "info@macontreeremovalco.com",
+
   // ── Contact form (Web3Forms) ──────────────────────────────────────────
   // Web3Forms sends submissions to the email address you used to create
   // the access key at https://web3forms.com. Keep this in sync for reference.
@@ -30,7 +34,7 @@ const siteConfig = {
   // Use the profile/page URL, not a link to a single post or reel.
   // Shown as icons in the footer and added to the Organization schema (sameAs).
   social: {
-    facebook: "",
+    facebook: "https://www.facebook.com/profile.php?id=61595188109654",
     instagram: "https://www.instagram.com/macontreeremovalco/",
     tiktok: "https://www.tiktok.com/@macon.tree.remova",
   },
