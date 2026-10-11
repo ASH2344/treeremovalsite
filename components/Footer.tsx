@@ -1,6 +1,13 @@
 import siteConfig from "@/site.config";
 import { AREA_NAV, GUIDE_NAV, SERVICE_NAV } from "@/lib/pages";
 import PhoneButton from "./PhoneButton";
+import { FacebookIcon, InstagramIcon, TikTokIcon } from "./Icons";
+
+const SOCIAL = [
+  { key: "facebook", label: "Facebook", Icon: FacebookIcon },
+  { key: "instagram", label: "Instagram", Icon: InstagramIcon },
+  { key: "tiktok", label: "TikTok", Icon: TikTokIcon },
+] as const;
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -19,6 +26,23 @@ export default function Footer() {
           />
           <p className="mt-4 max-w-xs text-sm leading-relaxed">{siteConfig.footerLine}</p>
           <PhoneButton className="mt-5" />
+          {SOCIAL.some((s) => siteConfig.social[s.key]) && (
+            <ul className="mt-5 flex gap-3" aria-label="Follow us">
+              {SOCIAL.filter((s) => siteConfig.social[s.key]).map(({ key, label, Icon }) => (
+                <li key={key}>
+                  <a
+                    href={siteConfig.social[key]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${siteConfig.name} on ${label}`}
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-bark-500"
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
         <div>
           <h2 className="font-display text-lg font-bold uppercase tracking-wide text-white">Services</h2>
