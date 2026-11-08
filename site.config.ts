@@ -28,7 +28,7 @@ const siteConfig = {
 
   // ── Tracking & verification (leave "" to disable) ─────────────────────
   googleAnalyticsId: "", // GA4 Measurement ID, e.g. "G-XXXXXXXXXX"
-  googleSiteVerification: "", // Search Console HTML-tag content value only
+     googleSiteVerification: "2dYZ6Tt1ualEN398RDRIt6D0slQqgEr83BUnMGek0Hk", // Search Console HTML-tag content value only
 
   // ── Social profiles (leave "" to hide) ────────────────────────────────
   // Use the profile/page URL, not a link to a single post or reel.
